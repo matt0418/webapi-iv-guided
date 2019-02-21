@@ -4,7 +4,6 @@ const server = require('./api/server.js');
 
 const port = process.env.PORT || 5000
 
-
 server.get('/', async(req, res) => {
   try {
     const shoutouts = await db('shortcuts')
